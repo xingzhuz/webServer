@@ -17,18 +17,18 @@
 1. 刚登上服务器页面
 
 
-<img src="https://bu.dusays.com/2024/09/25/66f3b53ae0fd3.png" height=300px, width=500px></img>
+<img src="https://bu.dusays.com/2024/09/25/66f3b53ae0fd3.png"></img>
 
 2. 点击 `code` 文件目录中的 ` cal.c ` 代码文件
 
 
-<img src="https://bu.dusays.com/2024/09/25/66f3b53feffc2.png" height=300px, width=500px></img>
+<img src="https://bu.dusays.com/2024/09/25/66f3b53feffc2.png"></img>
 
 <img src="https://bu.dusays.com/2024/09/25/66f3b54524b44.png" height=300px, width=500px></img>
 
 3. 点击 `html` 目录中的一个 `html` 文件
 
-<img src="https://bu.dusays.com/2024/09/24/66f2b44b0ff54.png" height=300px, width=500px></img>
+<img src="https://bu.dusays.com/2024/09/24/66f2b44b0ff54.png" height=500px, width=600px></img>
 
 
 
