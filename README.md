@@ -2,6 +2,18 @@
 
 > Linux 环境下简易网络服务器（Linux/多线程/epoll）
 
+
+执行命令: 
+
+```shell
+# 首先查看虚拟机上的 IP 地址
+ifconfig -a
+
+# 编译运行
+gcc *.c -o server
+./server 10000 ./resources
+```
+
 ## 简介
 
 - 这是一个基于 `Linux` 环境下实现的网络服务器，使用 `HTTP` 协议实现浏览器和服务器通信
