@@ -1,0 +1,45 @@
+1、静态库操作过程：
+gcc -c in.c cal.c out.c
+ar rcs libmylib.a in.o cal.o out.o
+gcc -o ss stuscore.c -L ./ -lmylib
+rm *.o
+
+ar作用：创建和修改静态库
+格式：ar [选项] 静态库名.a 目标文件1.o 目标文件2.o …
+选项	说明
+d	从库中删除成员
+p	在终端上打印库中指定的成员
+r	在库中加入新成员文件，如果要加入的成员文件存在，则替换之；默认情况下，新的成员文件增加在库的结尾处
+t	显示库的成员文件清单
+a	在库的一个已经存在的成员后面增加一个新的成员文件
+c	创建一个库
+i	在库的一个已经存在的成员前面增加一个新的成员文件
+s	无论ar命令是否修改了库内容，都强制重新生成库符号表
+x	从库中提取一个成员文件。如果不指定要提取的成员文件则提取库中所有的文件
+
+
+2、动态库的编译和使用：
+gcc -fPIC -c in.c out.c cal.c
+gcc -shared -o libmylibs.so in.o out.o cal.o
+gcc -o dd stuscore.c -L ./ -lmylibs
+echo $LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=./ 或者export LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH
+./dd
+
+---------------------------------------
+通过调用系统函数来使用动态链接库:
+void * dlopen(const char *filename, int flag);
+dlerror()
+void * dlsym(void *handle, char *symbol);
+dlclose（）
+---------------------------------------
+
+3、参考网站：
+https://blog.csdn.net/weixin_47826078/article/details/120474883
+
+https://blog.csdn.net/Luckiers/article/details/124568399
+
+https://blog.csdn.net/weixin_38391755/article/details/80380786
+
+
+

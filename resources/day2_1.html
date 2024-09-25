@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Message Example</title>
+    <style>
+      h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-family: '微软雅黑';
+      }
+      div.container {
+        height: 565px;
+        width: 660px;
+        background-color:rgb(255,128,129) ;
+        margin: 200px auto;
+      }
+      div.button-group {
+        text-align: center;
+        margin-top: 20px;
+      }
+      input[type="submit"], input[type="reset"] {
+        font-size: 18px;
+      }
+      input[type="number"],input[type="date"] {
+        width: 165px; 
+      }
+      input[type="button"] {
+        background-color:navajowhite;
+      }
+      .musicPlayer {
+          
+            float: right;
+        }
+      
+      /* 幸运色部分 */
+      .container {
+          margin: 50px;
+      }
+      .color-label {
+          font-size: 1.2em;
+          margin-right: 10px;
+      }
+    </style>
+</head>
+<body>
+  <form action="day1_2.html" method="get">
+    <div class="container">
+      <h1>员工信息表</h1>
+      <p>&nbsp用户登录名:
+        <input type="text" name="username" style="margin-left: 2px;"/>&nbsp(必填)
+      </p>
+      <p>&nbsp用户密码: &nbsp&nbsp&nbsp
+        <input type="password" name="passwd"/>&nbsp(必填)
+      </p>
+
+      <p>&nbsp真实姓名:  &nbsp&nbsp&nbsp
+        <input type="text" name="name" placeholder="只能输入汉字"/>&nbsp(必填)
+      </p>
+
+      <p>&nbsp性别:&nbsp
+        <input type="radio" value="boy" name="sex"/>男
+        <input type="radio" value="girl" name="sex"/>女
+      </p>
+
+      <p>&nbsp爱好:&nbsp
+        <input type="checkbox" name="hobby" value="game">游戏
+        <input type="checkbox" name="hobby" value="code">代码
+        <input type="checkbox" name="hobby" value="chat">聊天
+      </p>
+
+      <p>&nbsp地区:&nbsp&nbsp
+        <select name="region">
+          <option value="chengdu" selected>成都</option>
+          <option value="shanghai">上海</option>
+          <option value="beijing">北京</option>
+          <option value="wuhan">武汉</option>
+        </select>
+        &nbsp邮编:
+        <input type="text" size="11" style="margin-left: 2px;">
+        do not know?
+        <a href="https://www.baidu.com">
+          <input type="button" value="一键百度">
+        </a>
+      </p>
+
+      <p>&nbsp真实年龄: &nbsp&nbsp&nbsp
+        <input type="number" name="age" max="200" min="1" step="1"/>&nbsp(必填)
+      </p>
+      <p>&nbsp出生日期: &nbsp&nbsp&nbsp
+        <input type="date" name="birthdate"/>&nbsp(必填)
+      </p>
+      <p>&nbsp身份证号: &nbsp&nbsp&nbsp
+        <input type="text" name="id" placeholder="以数字、字母x结尾"/>&nbsp(必填)
+     </p>
+ 
+      <p>&nbsp手机号码: &nbsp&nbsp&nbsp
+        <input type="tel" name="phone" pattern="\d{11}" title="请输入11位数字手机号" required placeholder="输入11位数字"/>&nbsp(必填)
+      </p>
+
+      <label for="luckyColor" class="color-label">&nbsp幸运色：</label>
+      <input type="color" id="luckyColor" name="luckyColor" value="#000000">
+      <span>(请选择你喜欢的颜色)</span>
+
+      <br>
+      
+      <div class="button-group">
+        <input type="submit" value="提交"/>&nbsp&nbsp&nbsp&nbsp
+        <input type="reset" value="重置"/>
+      </div>
+      
+    </div>
+  </form>
+</body>
+</html>

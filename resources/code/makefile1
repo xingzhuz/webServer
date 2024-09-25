@@ -1,0 +1,13 @@
+SRC := $(wildcard *.c)
+OBJ := $(SRC:.c=.o)
+
+main: $(OBJ)
+	$(CC) $^ -o $@
+	
+$(OBJ): %.o: %.c
+	$(CC) -c $< -o $@
+
+.PHONY: clean
+clean:
+	rm -f *.o main
+
