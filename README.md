@@ -57,3 +57,7 @@ gcc *.c -o server
 6. 如果是一个不存在的文件
 
 <img src="https://bu.dusays.com/2024/09/25/66f3b551f2cf6.png" height=300px, width=500px></img>
+
+<hr/>
+
+> 说明: 参考学习 [https://www.bilibili.com/video/BV1XB4y1B7P9/?spm_id_from=333.999.0.0](https://www.bilibili.com/video/BV1XB4y1B7P9/?spm_id_from=333.999.0.0)
